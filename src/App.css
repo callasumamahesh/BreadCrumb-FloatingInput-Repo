@@ -1,0 +1,119 @@
+/* App.css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.tablesection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  overflow-y: scroll;
+  align-items: center;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.addNewUser{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-close-button {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
+
+.modal-close-button:hover {
+  background-color: #c82333;
+}
+
+.addNewUser .plusicon{
+  cursor: pointer;
+}
+
+.editDeleteIcons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.editDeleteIcons .icon{
+  cursor: pointer;
+} */
+
+
+
