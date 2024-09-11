@@ -181,19 +181,105 @@
 
 // export default App
 
+// import React from 'react'
+// import { Route, Routes } from 'react-router-dom'
+// import LoginPage from './components/loginPage'
+// import HomePage from './components/homePage'
 
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import LoginPage from './components/loginPage'
-import HomePage from './components/homePage'
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path='/' element={<LoginPage/>}></Route>
+//       <Route path='/homepage' element={<HomePage/>}></Route>
+//     </Routes>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+//  breadcrumb
+
+
+
+
+
+// import React from "react";
+// import { Route, Routes } from "react-router-dom";
+// import HomePage from "./components/homePage";
+// import ProductsPage from "./components/productsPage";
+// import SingleProductpage from "./components/singleProductpage";
+// import Breadcrumb from "./components/breadcrumb";
+
+// function App() {
+//   return (
+//     <>
+//       <h1 style={{ textAlign: "center" }}>BreadCrumb</h1>
+//       <Breadcrumb />
+//       <Routes>
+//         <Route path="/" element={<HomePage />}></Route>
+//         <Route path="/products" element={<ProductsPage />}></Route>
+//         <Route
+//           path="/products/singleproduct"
+//           element={<SingleProductpage />}
+//         ></Route>
+//       </Routes>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Floating Input Text
+
+
+
+
+import React, { useState } from 'react';
+import './App.css';
 
 function App() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
-    <Routes>
-      <Route path='/' element={<LoginPage/>}></Route>
-      <Route path='/homepage' element={<HomePage/>}></Route>
-    </Routes>
-  )
+    <div className="form-container">
+      <form>
+        <div className="input-container">
+          <input
+            type="text"
+            id="name"
+            value={inputValue}
+            onChange={handleInputChange}
+            required
+          />
+          <label htmlFor="name" className={inputValue ? 'floating' : ''}>
+            Enter Name
+          </label>
+        </div>
+      </form>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
